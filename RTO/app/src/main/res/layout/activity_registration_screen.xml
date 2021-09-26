@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.peter.rto.registration_screen">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="REGISTRATION OF VEHICLES" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView23"
+        android:layout_below="@+id/textView23"
+        android:layout_marginTop="22dp"
+        android:text="CC/horse power"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <EditText
+        android:id="@+id/editText33"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:layout_alignBaseline="@+id/textView44"
+        android:layout_alignBottom="@+id/textView44"
+        android:layout_toEndOf="@+id/textView44"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textSize="10dp"
+        tools:layout_editor_absoluteX="288dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView44"
+        android:layout_marginStart="15dp"
+        android:text="Class of
+ vehicle" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="77dp"
+        android:layout_height="21dp"
+        android:textSize="10dp"
+        android:layout_alignTop="@+id/textView24"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="12dp"
+        android:text="Type of
+body" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_below="@+id/textView24"
+        android:ems="10"
+        android:textSize="10dp"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText14"
+        android:layout_alignBottom="@+id/editText14"
+        android:layout_toEndOf="@+id/spinner2"
+        android:text="Chassis no" />
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignBaseline="@+id/editText13"
+        android:layout_alignBottom="@+id/editText13"
+        android:layout_alignEnd="@+id/editText33"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView25"
+        android:layout_below="@+id/editText14"
+        android:layout_marginTop="14dp"
+        android:text="Makers
+name" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_above="@+id/textView29"
+        android:layout_alignStart="@+id/editText13"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText16"
+        android:layout_alignStart="@+id/textView26"
+        android:text="Engine no" />
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignBaseline="@+id/editText15"
+        android:layout_alignBottom="@+id/editText15"
+        android:layout_alignStart="@+id/editText14"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_below="@+id/textView27"
+        android:layout_marginTop="24dp"
+        android:text="Date of
+manufacture" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_alignStart="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_alignTop="@+id/textView29"
+        android:text="Unladen
+weight" />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView30"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignStart="@+id/editText16"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView27"
+        android:layout_below="@+id/editText17"
+        android:layout_marginTop="19dp"
+        android:text="Purpose" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignTop="@+id/textView31"
+        android:layout_toStartOf="@+id/textView44"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView31"
+        android:layout_below="@+id/textView31"
+        android:layout_marginTop="32dp"
+        android:text="Axel type" />
+
+    <EditText
+        android:id="@+id/editText18"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignBaseline="@+id/textView32"
+        android:layout_alignBottom="@+id/textView32"
+        android:layout_alignStart="@+id/editText15"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView32"
+        android:layout_alignStart="@+id/textView30"
+        android:text="Fuel" />
+
+    <EditText
+        android:id="@+id/editText19"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignStart="@+id/editText17"
+        android:layout_below="@+id/textView33"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/textView33"
+        android:layout_alignStart="@+id/editText19" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText19"
+        android:layout_alignStart="@+id/textView32"
+        android:text="No of
+ cylinders" />
+
+    <EditText
+        android:id="@+id/editText20"
+        android:layout_width="88dp"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/textView34"
+        android:layout_alignStart="@+id/editText18"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText19"
+        android:layout_toEndOf="@+id/spinner2"
+        android:text="Color" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText21"
+        android:layout_toStartOf="@+id/datePicker"
+        android:text="Owners name" />
+
+    <EditText
+        android:id="@+id/editText21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView30"
+        android:layout_below="@+id/editText20"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText19"
+        android:layout_below="@+id/editText21"
+        android:layout_marginTop="11dp"
+        android:background="@color/colorPrimary"
+        android:elevation="14dp"
+        android:onClick="regveh"
+        android:text="SUBMIT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+       />
+
+
+</RelativeLayout>
+
+
+

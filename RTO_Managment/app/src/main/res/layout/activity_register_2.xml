@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.peter.rto.register_2">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_toStartOf="@+id/button3"
+        android:text="Enter your phone number" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView17"
+        android:layout_marginEnd="73dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="+91"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/editText9"
+        android:background="@drawable/ic_action_phone"
+        android:layout_alignBottom="@+id/editText9" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editText9"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="21dp"
+        android:background="@color/colorPrimary"
+        android:text="Send OTP"
+        android:onClick="send_sms"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText9"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="102dp"
+        android:text="Enter OTP" />
+
+    <EditText
+        android:id="@+id/editText26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView46"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="please enter OTP"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText26"
+        android:layout_marginTop="32dp"
+        android:layout_toEndOf="@+id/textView17"
+        android:background="@color/colorPrimary"
+        android:text="Verify"
+        android:onClick="verify"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>
